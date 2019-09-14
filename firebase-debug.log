@@ -1,0 +1,181 @@
+[debug] [2019-09-14T18:15:27.639Z] ----------------------------------------------------------------------
+[debug] [2019-09-14T18:15:27.647Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-09-14T18:15:27.647Z] CLI Version:   7.2.2
+[debug] [2019-09-14T18:15:27.647Z] Platform:      darwin
+[debug] [2019-09-14T18:15:27.647Z] Node Version:  v10.16.0
+[debug] [2019-09-14T18:15:27.661Z] Time:          Sat Sep 14 2019 23:45:27 GMT+0530 (India Standard Time)
+[debug] [2019-09-14T18:15:27.661Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-14T18:15:27.690Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-14T18:15:27.691Z] > authorizing via signed-in user
+[debug] [2019-09-14T18:15:27.691Z] [iam] checking project shoppr-c97a7 for permissions ["firebase.projects.get"]
+[debug] [2019-09-14T18:15:27.695Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/shoppr-c97a7:testIamPermissions  
+
+[debug] [2019-09-14T18:15:30.078Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-14T18:15:30.081Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/shoppr-c97a7  
+ 
+[debug] [2019-09-14T18:15:30.991Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/abhijeetrathore/RNStripe'...
+[info] 
+[warn] ⚠  Your functions directory does not specify a Node version.
+   - Learn more at https://firebase.google.com/docs/functions/manage-functions#set_runtime_options
+[debug] [2019-09-14T18:15:31.026Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/shoppr-c97a7/adminSdkConfig  
+ 
+[debug] [2019-09-14T18:15:31.555Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/abhijeetrathore/RNStripe/functions" for Cloud Functions...
+[debug] [2019-09-14T18:15:32.870Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[debug] [2019-09-14T18:15:32.873Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:15:32.880Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:15:32.887Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:15:32.890Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[payWithStripe]: http function initialized (http://localhost:5000/shoppr-c97a7/us-central1/payWithStripe).
+[debug] [2019-09-14T18:15:43.375Z] Accepted request POST /shoppr-c97a7/us-central1/payWithStripe --> payWithStripe
+[debug] [2019-09-14T18:15:44.832Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "payWithStripe"
+[debug] [2019-09-14T18:15:44.833Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:15:44.843Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:15:44.849Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:15:44.850Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:15:45.370Z] [runtime-status] Trigger "payWithStripe" has been found, beginning invocation! {}
+[debug] [2019-09-14T18:15:45.371Z] [runtime-status]  {"httpsTrigger":{},"name":"payWithStripe","entryPoint":"payWithStripe"}
+[debug] [2019-09-14T18:15:45.371Z] [runtime-status] Running payWithStripe in mode HTTPS {}
+[debug] [2019-09-14T18:15:45.382Z] {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_15704.sock"}
+[debug] [2019-09-14T18:15:45.383Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_15704.sock"}
+[debug] [2019-09-14T18:15:45.442Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-14T18:15:45.454Z] [runtime-status] Ephemeral server survived. {}
+[info] >  { Error: You cannot use a Stripe token more than once: tok_1FIZrBKT40GCfr6OjowxVbz1.
+[info] >      at Function.generate (/Users/abhijeetrathore/RNStripe/functions/node_modules/stripe/lib/Error.js:49:16)
+[info] >      at IncomingMessage.res.once (/Users/abhijeetrathore/RNStripe/functions/node_modules/stripe/lib/StripeResource.js:167:39)
+[info] >      at Object.onceWrapper (events.js:286:20)
+[info] >      at IncomingMessage.emit (events.js:203:15)
+[info] >      at endReadableNT (_stream_readable.js:1129:12)
+[info] >      at process._tickCallback (internal/process/next_tick.js:63:19)
+[info] >    raw:
+[info] >     { code: 'token_already_used',
+[info] >       doc_url: 'https://stripe.com/docs/error-codes/token-already-used',
+[info] >       message:
+[info] >        'You cannot use a Stripe token more than once: tok_1FIZrBKT40GCfr6OjowxVbz1.',
+[info] >       type: 'invalid_request_error',
+[info] >       headers:
+[info] >        { server: 'nginx',
+[info] >          date: 'Sat, 14 Sep 2019 18:15:46 GMT',
+[info] >          'content-type': 'application/json',
+[info] >          'content-length': '258',
+[info] >          connection: 'keep-alive',
+[info] >          'access-control-allow-credentials': 'true',
+[info] >          'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',
+[info] >          'access-control-allow-origin': '*',
+[info] >          'access-control-expose-headers':
+[info] >           'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',
+[info] >          'access-control-max-age': '300',
+[info] >          'cache-control': 'no-cache, no-store',
+[info] >          'request-id': 'req_osy37F6ijOSzoj',
+[info] >          'stripe-version': '2019-03-14',
+[info] >          'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' },
+[info] >       statusCode: 400,
+[info] >       requestId: 'req_osy37F6ijOSzoj' },
+[info] >    rawType: 'invalid_request_error',
+[info] >    code: 'token_already_used',
+[info] >    param: undefined,
+[info] >    detail: undefined,
+[info] >    headers:
+[info] >     { server: 'nginx',
+[info] >       date: 'Sat, 14 Sep 2019 18:15:46 GMT',
+[info] >       'content-type': 'application/json',
+[info] >       'content-length': '258',
+[info] >       connection: 'keep-alive',
+[info] >       'access-control-allow-credentials': 'true',
+[info] >       'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',
+[info] >       'access-control-allow-origin': '*',
+[info] >       'access-control-expose-headers':
+[info] >        'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',
+[info] >       'access-control-max-age': '300',
+[info] >       'cache-control': 'no-cache, no-store',
+[info] >       'request-id': 'req_osy37F6ijOSzoj',
+[info] >       'stripe-version': '2019-03-14',
+[info] >       'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' },
+[info] >    requestId: 'req_osy37F6ijOSzoj',
+[info] >    statusCode: 400 }
+[debug] [2019-09-14T18:20:47.322Z] Accepted request POST /shoppr-c97a7/us-central1/payWithStripe --> payWithStripe
+[debug] [2019-09-14T18:20:49.529Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "payWithStripe"
+[debug] [2019-09-14T18:20:49.539Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:20:49.539Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:20:49.544Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:20:49.545Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:20:50.116Z] [runtime-status] Trigger "payWithStripe" has been found, beginning invocation! {}
+[debug] [2019-09-14T18:20:50.116Z] [runtime-status]  {"httpsTrigger":{},"name":"payWithStripe","entryPoint":"payWithStripe"}
+[debug] [2019-09-14T18:20:50.116Z] [runtime-status] Running payWithStripe in mode HTTPS {}
+[debug] [2019-09-14T18:20:50.129Z] {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16199.sock"}
+[debug] [2019-09-14T18:20:50.139Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16199.sock"}
+[debug] [2019-09-14T18:20:50.219Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-14T18:20:50.231Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "payWithStripe" in ~1s
+[debug] [2019-09-14T18:23:22.309Z] Accepted request POST /shoppr-c97a7/us-central1/payWithStripe --> payWithStripe
+[debug] [2019-09-14T18:23:24.356Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "payWithStripe"
+[debug] [2019-09-14T18:23:24.369Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:23:24.373Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:23:24.378Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:23:24.378Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:23:24.868Z] [runtime-status] Trigger "payWithStripe" has been found, beginning invocation! {}
+[debug] [2019-09-14T18:23:24.868Z] [runtime-status]  {"httpsTrigger":{},"name":"payWithStripe","entryPoint":"payWithStripe"}
+[debug] [2019-09-14T18:23:24.872Z] [runtime-status] Running payWithStripe in mode HTTPS {}
+[debug] [2019-09-14T18:23:24.876Z] {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16257.sock"}
+[debug] [2019-09-14T18:23:24.878Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16257.sock"}
+[debug] [2019-09-14T18:23:24.961Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-14T18:23:24.966Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "payWithStripe" in ~1s
+[debug] [2019-09-14T18:26:00.093Z] Accepted request POST /shoppr-c97a7/us-central1/payWithStripe --> payWithStripe
+[debug] [2019-09-14T18:26:01.748Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "payWithStripe"
+[debug] [2019-09-14T18:26:01.757Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:26:01.760Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:26:01.767Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:26:01.769Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:26:02.312Z] [runtime-status] Trigger "payWithStripe" has been found, beginning invocation! {}
+[debug] [2019-09-14T18:26:02.312Z] [runtime-status]  {"httpsTrigger":{},"name":"payWithStripe","entryPoint":"payWithStripe"}
+[debug] [2019-09-14T18:26:02.312Z] [runtime-status] Running payWithStripe in mode HTTPS {}
+[debug] [2019-09-14T18:26:02.320Z] {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16347.sock"}
+[debug] [2019-09-14T18:26:02.322Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16347.sock"}
+[debug] [2019-09-14T18:26:02.384Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-14T18:26:02.408Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "payWithStripe" in ~1s
+[debug] [2019-09-14T18:29:24.838Z] Accepted request POST /shoppr-c97a7/us-central1/payWithStripe --> payWithStripe
+[debug] [2019-09-14T18:29:26.422Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "payWithStripe"
+[debug] [2019-09-14T18:29:26.433Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:29:26.440Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:29:26.441Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:29:26.441Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:29:26.926Z] [runtime-status] Trigger "payWithStripe" has been found, beginning invocation! {}
+[debug] [2019-09-14T18:29:26.926Z] [runtime-status]  {"httpsTrigger":{},"name":"payWithStripe","entryPoint":"payWithStripe"}
+[debug] [2019-09-14T18:29:26.930Z] [runtime-status] Running payWithStripe in mode HTTPS {}
+[debug] [2019-09-14T18:29:26.939Z] {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16378.sock"}
+[debug] [2019-09-14T18:29:26.944Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16378.sock"}
+[debug] [2019-09-14T18:29:27.014Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-14T18:29:27.031Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "payWithStripe" in ~1s
+[debug] [2019-09-14T18:38:01.011Z] Accepted request POST /shoppr-c97a7/us-central1/payWithStripe --> payWithStripe
+[debug] [2019-09-14T18:38:02.955Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "payWithStripe"
+[debug] [2019-09-14T18:38:02.963Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:38:02.973Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:38:02.978Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:38:02.979Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:38:03.531Z] [runtime-status] Trigger "payWithStripe" has been found, beginning invocation! {}
+[debug] [2019-09-14T18:38:03.532Z] [runtime-status]  {"httpsTrigger":{},"name":"payWithStripe","entryPoint":"payWithStripe"}
+[debug] [2019-09-14T18:38:03.532Z] [runtime-status] Running payWithStripe in mode HTTPS {}
+[debug] [2019-09-14T18:38:03.539Z] {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16491.sock"}
+[debug] [2019-09-14T18:38:03.544Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/b8/wyjf2c2j0fq44lsxvzrfhh180000gn/T/firebase_emulator_invocation_16491.sock"}
+[debug] [2019-09-14T18:38:03.618Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-14T18:38:03.633Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "payWithStripe" in ~1s
+[debug] [2019-09-14T18:44:15.342Z] File /Users/abhijeetrathore/RNStripe/functions/index.js changed, reloading triggers
+[debug] [2019-09-14T18:44:18.541Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/abhijeetrathore/RNStripe/functions","node_version":"10.16.0"}
+[debug] [2019-09-14T18:44:18.543Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-14T18:44:18.553Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-14T18:44:18.554Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-14T18:44:18.556Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/abhijeetrathore/RNStripe/functions/node_modules/firebase-functions/lib/index.js"}
